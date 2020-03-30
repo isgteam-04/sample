@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float & Align</title>
+
+    <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: Arial, Helvetica, sans-serif;
+           line-height: 1.4em;
+       }
+
+       .container {
+           max-width: 960px;
+           margin: 30px auto;
+       }
+
+       .box {
+           background: #f4f4f4;
+           border: 1px solid #333;
+           padding: 20px;
+           margin-bottom: 15px;
+       }
+
+       .box p {
+           /* Text Align */
+           text-align: left;
+           text-align: right;
+           text-align: center;
+           text-align: justify;
+       }
+
+       .clr { 
+           clear: both;
+       }
+
+       #box-2 {
+           float: left;
+           width: 68%;
+       }
+
+       #box-3 {
+           float: right;
+           width: 30%;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, velit.</p>
+        </div>
+
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deleniti perspiciatis sequi voluptatibus. Dolore cumque praesentium nisi molestias facilis facere.</p>
+        </div>
+
+        <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad natus ex impedit hic dolore, nostrum veritatis fugiat, voluptatem quas tempore possimus, vitae est labore omnis ullam dignissimos? Molestias, vel?</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eligendi ex ducimus dignissimos. Et odio cumque saepe, aut reiciendis provident eius qui fuga labore iusto soluta eligendi praesentium consectetur vel id tenetur sunt animi, obcaecati suscipit aliquid. Repellat, cupiditate hic!</p>
+        </div>
+
+    </div>
+</body>
+</html>
